@@ -4,7 +4,7 @@
         <ul class="flex justify-start items-center w-full">
             <!-- Logo and Name Section -->
             <li class="flex items-center gap-1 ml-2">
-                <img src="{{asset('images/withtitleLogo.png')}}" alt="Logo" class="w-[150px] sm:w-[180px] md:w-[200px]">
+                <a href="/"><img src="{{asset('images/withtitleLogo.png')}}" alt="Logo" class="w-[150px] sm:w-[180px] md:w-[200px]"></a>
                 <a href="/user-edit/{{ Auth::user()->id }}" class="font-[500] sm:text-xl">{{ Auth::user()->name }}</a>
             </li>
 

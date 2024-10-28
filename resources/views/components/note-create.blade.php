@@ -22,7 +22,7 @@
          {{-- description input box --}}   
           <div class="sub-wrapper-create">  
           <label for="description" class="label-format">Description:</label>                        
-          <input type="text" id="description" name="description" required class="flex w-full">
+          <input type="text" id="description" name="description" required placeholder="Add Description" class="flex w-full">
         </div>
 
         {{-- search ko kung pano gawin responsive si text area --}}
@@ -33,15 +33,11 @@
 
         
           <div class="button-option ">
-            
             <button type="submit" class="edit ok edit">Create </button>
+            <button type="submit" class="edit notok " form="cancel">Cancel </button>
          </div>
       </div>    
      </form>
-     <div class="button-option">
-        <form action="/" method="GET">
-            <button type="submit" class="edit notok ">Cancel </button>
-        </form>
-     </div>
+        <form action="/" method="GET" id="cancel"></form>
 
 </div>
