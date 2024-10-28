@@ -320,7 +320,7 @@ input,textarea{
 
 .logo-wrapper-landing{
     @apply flex mt-20 justify-center    /* wrapper checker */
-    bg-slate-50
+    /* bg-slate-50 */
 
     /* @apply w-[200px] h-[50px] min-w-[150px] min-h-max
     sm:w-[220px] sm:h-[60px] md:w-[250px] md:h-[70px] lg:w-[300px] lg:h-[80px]  */

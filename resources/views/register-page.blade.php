@@ -12,7 +12,7 @@
 
     <div class="main-wrapper-landing gap-3">
 
-        <div class="logo-wrapper-landing "><img src="{{asset("images/logo_wtitle.png")}}" alt="" class="w-full h-full"></div>
+        <div class="logo-wrapper-landing "><img src="{{asset("images/withtitleLogo.png")}}" alt="" class="w-full h-full"></div>
         
         <div class="flex sm:flex-row">
                 {{-- 
