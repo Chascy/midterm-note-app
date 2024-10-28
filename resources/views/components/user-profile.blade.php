@@ -5,12 +5,12 @@
 
     
 <div class="flex flex-row justify-center gap-3" >
-    <div class=" h-[250px] w-[250px] bg-slate-400 hidden sm:block ">>
-        <div>hellooo</div>
+    <div class=" h-[250px] w-[250px] bg-slate-400 hidden sm:block ">
+       <img src="{{asset('images/withtitleLogo.png')}}" alt="Logo" class="w-[150px] sm:w-[180px] md:w-[200px]">
     </div>
 
-
-        <form action="{{ route('updateUser', ['id' => Auth::user()->id]) }}" method="POST"  class="flex flex-col w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]">
+        <form action="/" method="GET" id="cancel"></form>
+        <form action="{{ route('updateUser', ['id' => Auth::user()->id]) }}" id="update" method="POST"  class="flex flex-col w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]">
             @method('PUT')
             @csrf
             
@@ -35,19 +35,21 @@
                     </div>            
 
 
-                    <div class="button-option ">
-                        <button type="submit" class="ok">Save</button>
+                    <div class="button-option-b ">
+                        <button type="submit" class="ok" form="update">Save</button>
+                        <button type="submit" class="edit notok " form="cancel">Cancel</button>
                     </div>
                 </div>    
 
             </div>
         </form>
-        <div class="button-option">
-            <form action="/" method="GET">
-                <button type="submit" class="edit notok ">Cancel </button>
-            </form>
-         </div>
     </div>
 </div>
 
 </div>
+
+
+        {{-- <div class="button-option">
+            <form action="/" method="GET">
+                <button type="submit" class="edit notok ">Cancel </button>
+            </form> --}}

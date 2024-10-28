@@ -15,11 +15,6 @@
         <div class="logo-wrapper-landing "><img src="{{asset("images/withtitleLogo.png")}}" alt="" class="w-full h-full"></div>
         
         <div class="flex sm:flex-row">
-                {{-- 
-                <div class="w-[500px] h-full bg-slate-100"> 
-                    other
-
-                </div> --}}
 
                 <div class="sub-wrapper-landing"> 
 
