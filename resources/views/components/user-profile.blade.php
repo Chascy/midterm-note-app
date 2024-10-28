@@ -5,8 +5,8 @@
 
     
 <div class="flex flex-row justify-center gap-3" >
-    <div class=" h-[250px] w-[250px] bg-slate-400 hidden sm:block ">
-       <img src="{{asset('images/withtitleLogo.png')}}" alt="Logo" class="w-[150px] sm:w-[180px] md:w-[200px]">
+    <div class=" h-[250px] w-[250px] hidden sm:block ">
+       <img src="{{asset('images/logo_for_profilepage.png')}}" alt="Logo" class="w-[150px] sm:w-[180px] md:w-[200px]">
     </div>
 
         <form action="/" method="GET" id="cancel"></form>

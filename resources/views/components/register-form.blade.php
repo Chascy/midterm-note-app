@@ -1,5 +1,7 @@
+<form action="{{ route('login') }}" method="GET" class="none" id="login">@method('GET')</form>
 <div class="Landing-form">
-    <form action="{{ route('register.post') }}" class="form" method="POST">
+
+    <form action="{{ route('register.post') }}" class="form" id="register" method="POST">
       @csrf
       @method('POST')
         <p id="heading">Register</p>
@@ -29,14 +31,16 @@
 
 
         <div class="btn">
-        <button class="button1" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-        </div>
+        <button class="button1" type="submit" form="register">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <button class="button2" type="submit" form="login">Login</button>
+      
+      </div>
+
+
+
+
         <br>
         
     </form>
 
-    {{-- <form action="{{ route('login') }}" method="GET">
-        @method('GET')
-        <button type="submit">Login</button>
-    </form> --}}
     </div>

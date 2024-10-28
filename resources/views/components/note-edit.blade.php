@@ -1,6 +1,6 @@
 <div class="main-wrapper-create absolute  top-[50px] lg:top-[75px] object-top">  {{-- ganito mag kabit sa top--}}
     
-    <form action="{{ route('edit.post', ['id' => $note->id]) }}" method="POST">
+    <form action="{{ route('edit.post', ['id' => $note->id]) }}" method="POST" id="save">
       @method('PUT')
       @csrf
     <div class="sub-header-wrapper">
@@ -33,15 +33,16 @@
 
         
           <div class="button-option ">
-             <button type="submit" class=" ok">Save </button>
+             <button type="submit" class="ok" form="save">Save </button>
+             <button type="submit" class="edit notok " form="cancel">Cancel </button>
+             
          </div>
       </div>    
      </form>
-     <div class="button-option">
-        <form action="/" method="GET">
-            <button type="submit" class="edit notok ">Cancel </button>
-        </form>
+
+
      </div>
+     <form action="/" method="GET" id="cancel"></form>
 
 
 </div>
