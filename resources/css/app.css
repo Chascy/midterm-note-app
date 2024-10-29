@@ -11,7 +11,7 @@
     box-sizing:border-box;
     font-family: "verdana";
 }
-/* ============================== bg */
+/* ==============================*/
 .background {
  
     @apply bg-gradient-to-t from-slate-500 to-zinc-800
@@ -24,15 +24,13 @@
 .main-wrapper-header {
     @apply flex flex-row  text-white shadow-lg shadow-slate-700
     bg-gradient-to-b from-amber-500 to-orange-500
-    px-2 py-4 sm:px-4 lg:px-24;
-    max-width: 100vw;
-    width: 100%;
-    
+    px-2 py-4 sm:px-4 lg:px-24   w-full;
+
 }
 
 .main-wrapper-header ul {
-    @apply flex w-full sm:px-8 md:px-10 justify-between items-center
-    items-center gap-4 sm:gap-8 lg:gap-12; /* Reduce padding on smaller screens */
+    @apply flex w-full sm:px-8 md:px-10 justify-between 
+    items-center gap-4 sm:gap-8 lg:gap-12; 
     ; 
 }
 
@@ -49,11 +47,7 @@
 
 .main-wrapper-home{
     @apply flex flex-col items-center justify-center bg-gradient-to-b from-amber-200 to-zinc-50 
-    my-0 mx-auto p-5 relative;
-    width: 80%; 
-    max-width: 1200px;
-    min-height: 100vh;  
-
+    my-0 mx-auto p-5 relative w-[80%] max-w-[1200px] min-h-[100vh];
 }
 
 /* ============================== page main content wrapper -> sub header*/
@@ -79,31 +73,20 @@
     sm:w-[50%] md:w-[270px];
     
     h2.title-card {
-    @apply cursor-pointer bg-amber-400 p-2 mt-[-20px] text-center justify-center;
-    font-family: 'Verdana';
-    font-weight: 600;
+    @apply cursor-pointer bg-amber-400 p-2 mt-[-20px] text-center justify-center font-semibold;
     }
 
     p.description {
         @apply w-[max] h-auto overflow-y-auto p-1  
-        my-1 font-normal italic; 
-         word-wrap: break-word;
-         overflow-wrap: break-word;
-         white-space: normal;
+        my-1 font-normal italic break-words whitespace-normal; 
 
         scrollbar-width: none; /* Firefox: hides the scrollbar */
         -ms-overflow-style: none; /* IE and Edge: hides the scrollbar */
     }
        
     p.note-content {
-      @apply w-full h-[100px] overflow-y-auto p-2  my-2 font-normal; 
-
-
-       
-       word-wrap: break-word;
-       overflow-wrap: break-word;
-       white-space: normal;
-
+      @apply w-full h-[100px] overflow-y-auto p-2  my-2 font-normal break-words whitespace-normal; 
+      
       scrollbar-width: 2px; /* Firefox: hides the scrollbar */
       -ms-overflow-style: none; /* IE and Edge: hides the scrollbar */
   }
@@ -114,33 +97,29 @@
     }
 
     div.options {
-        @apply  cursor-pointer flex flex-row ml-12 gap-[15px]  border-orange-300 items-center justify-center; 
-        font-family: 'Verdana';
-        font-weight: 400;
+        @apply  cursor-pointer flex flex-row ml-12 gap-[15px]  border-orange-300 items-center justify-center font-[400]; 
     }
 
   }
 
-/* ==============================  content container - all*/
+/* ==============================  */
 
 .main-wrapper-create {
     @apply  flex flex-col justify-center mx-auto mb-[10%] gap-2 rounded-xl
     w-[90%] min-h-[400px] p-5  overflow-hidden
-    bg-slate-50 shadow-md ;
-    max-width: 750px;
-    max-height: 600px;
+    bg-slate-50 shadow-md  max-w-[750px] max-h-[600px];
 
 }  
 
-/* ==============================  content container - all - sub header*/
+/* ==============================  */
 
 .sub-header-wrapper{
-  @apply flex flex-col justify-center bg-amber-500 w-auto  
-  w-full absolute -mx-5 top-0 h-16 pb-1 lg:pt-3;
+  @apply flex flex-col justify-center bg-amber-500 w-full 
+  absolute -mx-5 top-0 h-16 pb-1 lg:pt-3;
  
 }
 
-/* ==============================  content container - all - content wrapper*/
+/* ============================== */
 
 .sub-wrapper-create{
     @apply flex flex-col h-[40px]
@@ -149,7 +128,7 @@
 
 }
 
-/* ==============================  content container - all - content wrapper - content css*/
+/* ==============================  */
 
 .label-format{
     @apply sm:text-[8px] sm:gap-3 md:text-xs md:gap-8 lg:text-lg  lg:gap-14;
@@ -161,7 +140,7 @@ input,textarea{
 }
 
 
-/* ==============================  content container - all - content wrapper - button css*/
+/* ==============================  */
   .button-option{
       @apply flex flex-row justify-center gap-2
 
@@ -182,7 +161,6 @@ input,textarea{
     ; 
 
   @apply border-2 border-orange-400 rounded-[20px] text-orange-400 font-semibold ;
-  /*  text-white bg-yellow-500*/
 
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -195,7 +173,6 @@ input,textarea{
     ; 
 
   @apply border-2 border-orange-400 rounded-[20px] text-orange-400 font-semibold ;
-  /*  text-white bg-yellow-500*/
 
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -212,90 +189,31 @@ input,textarea{
     @apply hover:bg-red-600 hover:border-white hover:text-white;
     }
 
-/* ==============================  content container - all - content wrapper - VIEW css*/
+/* ==============================  */
 
 .view-title{
-  @apply cursor-pointer p-2 mt-[-10px] justify-center;
+  @apply p-2 mt-[-10px] justify-center;
   font-family: 'Verdana';
   font-weight: 600;
 }
 
 .view-description{
-  @apply w-full  min-h-[100px] max-h-[120px] overflow-y-auto font-normal italic; 
+  @apply w-full  min-h-[100px] max-h-[120px] overflow-y-auto font-normal italic
+  break-words whitespace-normal; 
 
-  /* font-family: "Arial"; */
-  
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-
- scrollbar-width: none; /* Firefox: hides the scrollbar */
+ scrollbar-width: none; 
  -ms-overflow-style: none; 
 }
 
 .view-content{
-  @apply w-full h-[100px] overflow-y-auto font-normal; 
+  @apply w-full h-[100px] overflow-y-auto font-normal
+  break-words whitespace-normal ; 
 
-    
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-
- scrollbar-width: none; /* Firefox: hides the scrollbar */
+ scrollbar-width: none; 
  -ms-overflow-style: none; 
 }
 
-/* ====================================  OTHER*/
-
-.box {
-        @apply bg-slate-50 text-center w-52 h-40;
-    }
-    
-/* ==================================== */
-.popup{
-
-    .overlay{
-        @apply fixed top-0 left-0 w-[100vw] h-[100vh] bg-slate-500 z-[1] ;
-        opacity: 70%;
-        display: none;
-        
-    }
-
-    .content{
-        @apply absolute top-[50%] left-[50%] bg-white w-[450px]
-        h-[220px] z-[2] text-center p-5 ;
-        transform:translate(-50%, -50%)scale(0);
-    
-    }
-    
-    .close-btn{
-        @apply absolute right-5 top-5 w-[30px] h-[30px] bg-slate-900 text-white
-        text-center rounded-[50%];
-    
-        font-size:25px;
-        font-weight: 600;
-        line-height: 25px;
-        color:#ffff;
-    }
-}
-
-.popup.active .overlay{
-    
-    @apply block;
-
-}
-
-.popup.active  .content{
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-/* ==================================== */
-
-
-
-
-
-/* ============================== LANDING PAGE*/
+/* ============================== */
 
 .main-wrapper-landing{
     @apply flex flex-col items-center justify-center  
@@ -444,7 +362,6 @@ input,textarea{
   background-color: white;
   border: 1px solid #ddd;
   
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
   z-index: 10;
   min-width: 150px;
   padding: 0.5em 0;
@@ -454,12 +371,4 @@ input,textarea{
 .dropdown-content form {
   
   padding: 0.5em 1em;
-}
-
-.button-header {
-  @apply bg-orange-400;  
-  color: white;
-  padding: 0.5em 1em;
-  border: none;
-  cursor: pointer;
 }

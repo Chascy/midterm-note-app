@@ -14,17 +14,13 @@
           </div>
       </div>
 
-    
         <div class="flex flex-col min-h-[100px] mt-20 gap-1"> 
 
-          {{-- description input box --}}   
           <div class="flex flex-col  ">  
             <label for="description" class="label-format">Description:</label>                        
             <p class="view-description" >{{ $note->description }}</p>
           </div>
 
-
-          {{-- search ko kung pano gawin responsive si text area --}}
           <div class="flex flex-col ">    
             <label for="note" class="label-format">Note Content :</label>
             <p class="view-content">{{ $note->context }}</p>

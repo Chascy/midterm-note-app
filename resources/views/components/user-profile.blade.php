@@ -48,8 +48,3 @@
 
 </div>
 
-
-        {{-- <div class="button-option">
-            <form action="/" method="GET">
-                <button type="submit" class="edit notok ">Cancel </button>
-            </form> --}}
