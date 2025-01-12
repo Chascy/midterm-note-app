@@ -10,8 +10,10 @@ use App\Models\User;
 class NoteController extends Controller
 {
     public function showAllNotes(){
-        $user = Auth::user();
-        $userNotes = Note::where('user_id', $user->id)->get();
+        $user = auth()->guard('web')->user();
+        $userNotes = $user->userNotes()->get();
+        // $user = Auth::user();
+        // $userNotes = Note::where('user_id', $user->id)->get();
 
         return view('home', ['notes' => $userNotes, 'user' => $user]);
     }

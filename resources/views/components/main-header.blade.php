@@ -18,13 +18,14 @@
                 <div id="dropdownMenu" class="dropdown-content hidden">
                     <form action="{{ route('create') }}" method="GET">
                         @method('GET')
-                        <button class="border-none" type="submit">Create</button>
+                        <button class="bg-orange-400 text-white" type="submit">Create</button>
+                        {{-- border-none --}}
                     </form>
             
                     <form action="{{ route('logout', ['id' => Auth::user()->id]) }}" method="POST">
                         @csrf
                         @method('POST')
-                        <button type="submit" class="border-none" onclick="return confirm('Log out now?')">Logout</button>
+                        <button type="submit" class="bg-orange-400 text-white" onclick="return confirm('Log out now?')">Logout</button>
                     </form>
                 </div>
             </li>

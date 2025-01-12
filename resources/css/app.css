@@ -209,7 +209,7 @@ input,textarea{
   @apply w-full h-[100px] overflow-y-auto font-normal
   break-words whitespace-normal ; 
 
- scrollbar-width: none; 
+ scrollbar-width: none;
  -ms-overflow-style: none; 
 }
 

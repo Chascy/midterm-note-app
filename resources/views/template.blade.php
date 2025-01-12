@@ -7,7 +7,7 @@
 
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
-    <title>Document</title>
+    <title>Notable</title>
 </head>
 <body>
     
